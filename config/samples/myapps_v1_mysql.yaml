@@ -1,0 +1,8 @@
+apiVersion: myapps.findemo.com/v1
+kind: MySQL
+metadata:
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: mysql-sample
+spec:
+  timeTest: "15s"

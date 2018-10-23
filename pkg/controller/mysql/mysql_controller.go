@@ -134,7 +134,7 @@ func (r *ReconcileMySQL) Reconcile(request reconcile.Request) (reconcile.Result,
 			log.Printf("failed to watch deployment: %v", err)
 			return reconcile.Result{}, err
 		}
-		log.Printf("enabled watching deployments")
+		log.Printf("enabled watching disks with unstructured")
 		r.watchStorage = true
 	}
 
